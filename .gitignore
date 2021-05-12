@@ -26,3 +26,5 @@ hs_err_pid*
 mvnw.cmd
 mvnw
 HELP.md
+.classpath
+.project

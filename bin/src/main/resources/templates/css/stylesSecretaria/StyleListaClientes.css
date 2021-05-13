@@ -1,0 +1,72 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background: #fff;
+
+}
+
+a{
+    text-decoration:none;
+}
+
+.titulo_secre #contenedor_direc{
+    position: sticky;
+    margin-left: 80em;
+    font-size: 15px;
+}
+
+.lista_opciones ul li{
+    display: inline;
+    list-style: none;
+    margin-left: 10em;
+}
+
+.lista_opciones{
+    margin-top: 5em;
+    margin-left: 3em;
+}
+
+
+.cuerpo_list list li table {
+    position: relative;
+    display:block;
+}
+
+.cuerpo_list li{
+    display: inline-block;
+    list-style: none;
+    width: 100%;
+    margin-left:4.5em;
+}
+
+.cuerpo_list #opciones_lista{
+    margin-left: 10em;
+    position: absolute;
+    right:100px;
+}
+
+.com-titulo{
+    margin-left: 0.2em;
+
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    font-weight: bold; 
+    font-size: 36px;
+}
+
+.navegacion-der{
+    display: flex;
+    flex: 1 1 auto;
+    visibility: visible;
+    position: fixed;
+    width: 100px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 600;
+    flex-direction: column;
+    background-color: #2ac4a0;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    transition-property: width;
+}

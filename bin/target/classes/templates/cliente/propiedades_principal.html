@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Propiedades SIG</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/styles cliente/style_principal.css" >
+    <link rel="stylesheet" type="text/css" href="../css/styles cliente/style_nosotros.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles cliente/style_propiedades.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">    
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet"> 
+    
+    <!--Libreria de iconos-->
+    <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.8.1/css/all.css” integrity=“sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0Ml5d60M1M7uH2+nqUivzIebhndOJK28anvf” crossorigin= “anonymous”>
+    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header id="cabecera">
+        <div id="opc_cabecera">
+            <ul id="lista_cabecera">
+                <li class="rounded" id="boton_logo">
+                  <a href="#"><i class="fa fa-home fa-3x" aria-hidden="true"></i>SIG</a></li>
+                <li class="rounded"><a href="#">Inicio</a></li>
+                <li class="rounded"><a href="#">Nosotros</a></li>
+                <li class="rounded"><a href="#">Propiedades</a></li>
+                <li class="rounded"><a href="#">Contacto</a></li>
+                <li class="rounded"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Buscar</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+        <h5 id="offcanvasTopLabel">Busca el inmueble de tus sueños</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+        <div class="offcanvas-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col6">Busqueda por palabra clave</div>
+              <div class="col6"><input class="form-control " type="text" placeholder="Palabra clave" aria-label="default input example"></div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col6">
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+    
+            </div>
+          </div>
+          
+          
+        </div>
+    </div>
+
+    <section class="principal_cuerpo d-flex justify-content-center">
+        <div class="container  h-100" >
+            <div class="row" id="contenedor_principal">
+                <div class="col-8 ">
+                    <h1><i class="fa fa-check fa-2x" aria-hidden="true"></i>Nuestras espectaculares propiedades</h1></div>
+                <div class="col-4 d-flex justify-content-end" id="contenedor_direc">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Propiedades</li>
+                        </ol>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="listado_propiedades">
+        <div class="container" id="buscador_prop">
+            <div class="row">
+                <h4>Busqueda de propiedad:</h4>
+                <div class="col-2">
+                    <select class="custom-select">
+                        <option selected>Todas</option>
+                        <option value="1">Mas nuevo a mas viejo</option>
+                        <option value="2">Para alquilar</option>
+                        <option value="3">Para vender</option>
+                      </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="conjunto_propiedades">
+            <div class="clase_propiedad" id="id_propiedad">
+                <div class="datos_propiedades">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12  text-white" class="edicion_direc"><H2> 204 Mount </H2><h2>Olive Road Two </h2></div>
+                            <div class="col-12  text-white mt-1 mb-1" class="edicion_Venta"><p class="rounded-pill border  d-flex justify-content-center">VENTA $$$</p></div>
+                            <div class="col-12  text-white" class="edicion_VerProp"><a href="#">Conocer mas <i class="fa fa-chevron-circle-right"></i> </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clase_propiedad2" id="id_propiedad2">
+                <div class="datos_propiedades">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12  text-white" class="edicion_direc"><H2> 204 Mount </H2><h2>Olive Road Two </h2></div>
+                            <div class="col-12  text-white mt-1 mb-1" class="edicion_Venta"><p class="rounded-pill border  d-flex justify-content-center">VENTA $$$</p></div>
+                            <div class="col-12  text-white" class="edicion_VerProp"><a href="#">Conocer mas <i class="fa fa-chevron-circle-right"></i> </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clase_propiedad3" id="id_propiedad3">
+                <div class="datos_propiedades" >
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12  text-white" class="edicion_direc"><H2> 204 Mount </H2><h2>Olive Road Two </h2></div>
+                            <div class="col-12  text-white mt-1 mb-1" class="edicion_Venta"><p class="rounded-pill border  d-flex justify-content-center">VENTA $$$</p></div>
+                            <div class="col-12  text-white" class="edicion_VerProp"><a href="#">Conocer mas <i class="fa fa-chevron-circle-right"></i> </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conjunto_propiedades2" >
+            <div class="clase_propiedad" id="id_propiedad4">
+                <div class="datos_propiedades">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12  text-white" class="edicion_direc"><H2> 204 Mount </H2><h2>Olive Road Two </h2></div>
+                            <div class="col-12  text-white mt-1 mb-1" class="edicion_Venta"><p class="rounded-pill border  d-flex justify-content-center">VENTA $$$</p></div>
+                            <div class="col-12  text-white" class="edicion_VerProp"><a href="#">Conocer mas <i class="fa fa-chevron-circle-right"></i> </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clase_propiedad2" id="id_propiedad5">
+                <div class="datos_propiedades">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12  text-white" class="edicion_direc"><H2> 204 Mount </H2><h2>Olive Road Two </h2></div>
+                            <div class="col-12  text-white mt-1 mb-1" class="edicion_Venta"><p class="rounded-pill border  d-flex justify-content-center">VENTA $$$</p></div>
+                            <div class="col-12  text-white" class="edicion_VerProp"><a href="#">Conocer mas <i class="fa fa-chevron-circle-right"></i> </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clase_propiedad3" id="id_propiedad6">
+                <div class="datos_propiedades">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12  text-white" class="edicion_direc"><H2> 204 Mount </H2><h2>Olive Road Two </h2></div>
+                            <div class="col-12  text-white mt-1 mb-1" class="edicion_Venta"><p class="rounded-pill border  d-flex justify-content-center">VENTA $$$</p></div>
+                            <div class="col-12  text-white" class="edicion_VerProp"><a href="#">Conocer mas <i class="fa fa-chevron-circle-right"></i> </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="paginacion">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+    </section>
+
+    <footer class="seccion_footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 "> 
+              <div class="contenedor_SIG">
+                <h1>SIG</h1>
+                <p>
+                  Enim minim veniam quis nostrud exercitation ullamco 
+                  laboris nisi ut aliquip exea commodo consequat duis sed aute irure. 
+                </p>
+                <p>Phone . +54 356 945234</p>
+                <p>Email . contact@example.com</p>
+              </div>
+            </div>
+            <div class="col-4 ">
+              <div class="contenedor_compañia">
+              <h1>La compañia</h1>
+              <ul>
+                  <li><i class="fa fa-chevron-circle-right"></i><a href="#">Site Map</a></li>
+                  <li><i class="fa fa-chevron-circle-right"></i><a href="#">Legal</a></li>
+                  <li><i class="fa fa-chevron-circle-right"></i><a href="#">Agent Admin</a></li>
+                  <li><i class="fa fa-chevron-circle-right"></i><a href="#">Careers</a></li>
+                  <li><i class="fa fa-chevron-circle-right"></i><a href="#">Affiliate</a></li>
+                  <li><i class="fa fa-chevron-circle-right"></i><a href="#">Privacy Policy</a></li>
+              </ul>
+              </div>
+            </div>
+            <div class="col-4 ">
+              <div class="contenedor_compañia">
+                <h1>Sitios internacionales</h1>
+                <ul>
+                    <li><i class="fa fa-chevron-circle-right"></i><a href="#">Venezuela</a></li>
+                    <li><i class="fa fa-chevron-circle-right"></i><a href="#">China</a></li>
+                    <li><i class="fa fa-chevron-circle-right"></i><a href="#">Hong Kong</a></li>
+                    <li><i class="fa fa-chevron-circle-right"></i><a href="#">Argentina</a></li>
+                    <li><i class="fa fa-chevron-circle-right"></i><a href="#">United States</a></li>
+                    <li><i class="fa fa-chevron-circle-right"></i><a href="#">Singapore</a></li>
+                </ul>
+              </div>
+            
+            </div>
+        </div>
+  
+        <!--Redes sociales-->
+        <div class="contenedor_social ">
+         <div class="container">
+            <div class="row ">
+              <div class="col-12">
+  
+                <div class="enlaces-container d-flex justify-content-center ">
+                  <ul>
+                    <li><a href="#" >Inicio</a></li>
+                    <li><a href="#" >Nosotos</a></li>
+                    <li><a href="#" >Propiedades</a></li>
+                    <li><a href="#" >Contacto</a></li>
+                  </ul>
+                </div>
+               
+              </div>
+              <div class="col-12 ">
+                 <div class="redes-container d-flex justify-content-center ">
+                    <ul>
+                      <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                 </div>
+  
+              </div>
+              <div class="col-12 border d-flex justify-content-center w-100"><h5>©Copyright SIG todos los derechos reservados.</h5></div>
+          </div>
+        </div>
+  
+  
+  
+  
+        </div>
+      </footer>
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+</html>

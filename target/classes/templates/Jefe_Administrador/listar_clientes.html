@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../css/styles admin/style_listarclientes.css">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listado clientes SIG</title>
+    <title>Listado clientes SGI</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
@@ -23,19 +23,19 @@
     <header class="cabecera_login">
         <ul id="lista_cabecera">
             <li id="boton_cabecera"> 
-                <a href="#">DOMUS</a>
+                <a href="admin_principal.html">SGI</a>
             </li>
             <li>
-                <a href="#">Bienvenido, [Nombre Usuario]</a>
+                <a href="admin_principal.html">Bienvenido, [Nombre Usuario]</a>
             </li>
             <li>
-                <a href="#">Ir al sitio</a>
+                <a href="../Cliente/cli_principal.html">Ir al sitio</a>
             </li>
             <li>
-                <a href="#"> Editar perfil </a>
+                <a href="admin_principal.html"> Editar perfil </a>
             </li>
             <li>
-                <a href="#"> Salir </a>
+                <a href="../Cliente/index.html"> Salir </a>
             </li>
         </ul>
     </header>
@@ -48,7 +48,7 @@
                         <div class="col-4 d-flex justify-content-end" id="contenedor_direc">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                                <li class="breadcrumb-item"><a href="admin_principal.html">Inicio</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Listar clientes</li>
                                 </ol>
                           </nav>
@@ -61,7 +61,7 @@
                 <li>
                     <div class="container-fluid">
                         <div class="row">
-                          <div class="col6">
+                          <div class="col-6">
                             <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                               <option selected>Ordenado por fecha</option>
                               <option value="1">Por edad</option>
@@ -80,7 +80,7 @@
             <table class="table table-success table-striped">
                 <thead>
                     <tr>
-                      <th scope="col">Nro Orden</th>
+                      <th scope="col">Codigo cliente</th>
                       <th scope="col">Fecha Contacto</th>
                       <th scope="col">Nombre</th>
                       <th scope="col">Apellido</th>
@@ -142,7 +142,7 @@
                 </div>
                 <div class="modal-body">
                     <button type="button" class="btn btn-primary">Descargar</button>
-                    <button type="button" class="btn btn-secondary">Imprimir</button>
+                    <a class="btn btn-secondary" href="reporte_clientes.html" target="_blank">Imprimir</a>
                 </div>
                 <div class="modal-footer">
 

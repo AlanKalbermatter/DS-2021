@@ -107,6 +107,17 @@ a{
     font-family: 'Signika', sans-serif;
 }
 
+.conjunto_propiedades .clase_propiedad .datos_propiedades .edicion_direc{
+    position: absolute;
+}
+.conjunto_propiedades .clase_propiedad .datos_propiedades .edicion_Venta{
+    position: absolute;
+}
+.conjunto_propiedades .clase_propiedad .datos_propiedades .edicion_VerProp{
+    position: absolute;
+}
+
+
 .conjunto_propiedades .clase_propiedad .datos_propiedades a{
     font-family: 'Signika', sans-serif;
     font-size: 20px;
@@ -168,5 +179,9 @@ a{
 
 .paginacion{
     margin-top: 3em;
+    margin-right: 40%;
 }
+
+
+
     

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/styles admin/style_adminprincipal.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles admin/style_listarclientes.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles admin/style_listartrans.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte Historico</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../html2pdf.js-master/dist/html2pdf.bundle.min.js"></script>
+
+    <script src="../js/js_comercializacion/gen_reporte_vent.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+<body>
+  <section id="reporte_vent">
+    <div class="container d-flex justify-content-center border mb-3">
+      <div class="row ">
+        <div class="col-12 fs-3 fw-bold ">Reporte Historico Venta y Alquiler</div>
+      </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Codigo Transaccion</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Tipo movimiento</th>
+                <th scope="col">Ganancia</th>
+                <th scope="col">Perdida</th>
+                <th scope="col">Codigo Inmueble</th>
+              </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>11/11/2019</td>
+                <td>Venta</td>
+                <td>000</td>
+                <td>000</td>
+                <td>1234</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>12/11/2019</td>
+                <td>Venta</td>
+                <td>000</td>
+                <td>000</td>
+                <td>4321</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>15/11/2019</td>
+                <td>Alquiler</td>
+                <td>000</td>
+                <td>000</td>
+                <td>2143</td>
+              </tr>
+              <tr>
+                  <th scope="row">4</th>
+                  <td>11/11/2020</td>
+                  <td>Alquiler</td>
+                  <td>000</td>
+                  <td>000</td>
+                  <td>666</td>
+              </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!--Seccion para titulo-->
+                <th></th>
+                <td></td>
+                <th colspan="6">Totales finales</th>
+                
+              </tr>
+              <tr>
+                
+                <th colspan="6"> </th>
+                
+              </tr>
+              <tr>
+                <th>Total ingresos</th>
+                <th>Total egresos</th>
+                <th>Totales general</th>  
+                <th>Totales Venta</th>  
+                <th>Totales Alquiler</th>  
+              </tr>
+              <tr>
+                  <td>000</td>
+                  <td>000</td>
+                  <td>000</td>
+                  <td>000</td>
+                  <td>000</td>
+
+              </tr>
+            
+        </tfoot>
+      </table>
+    </section>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Abrir opciones de listado
+    </button>
+    
+
+     <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Opciones de listado</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+            <button type="button" class="btn btn-primary" id="btnCrearPdf">Imprimir</button>
+        </div>
+        <div class="modal-footer">
+
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    
+    
+</body>
+</html>

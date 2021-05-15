@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="../css/styles admin/style_adminprincipal.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles admin/style_listarclientes.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles cajera/style_pagoalquiler.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <title>Adminitrar Trabajadores SGI</title>
+</head>
+<body>
+  <header class="cabecera_login">
+    <ul id="lista_cabecera">
+        <li id="boton_cabecera"> 
+            <a href="princpal_gerente.html">SGI</a>
+        </li>
+        <li>
+            <a href="princpal_gerente.html">Bienvenido, [Nombre Usuario]</a>
+        </li>
+        <li>
+            <a href="../Cliente/cli_principal.html">Ir al sitio</a>
+        </li>
+        <li>
+            <a href="princpal_gerente.html"> Editar perfil </a>
+        </li>
+        <li>
+            <a href="../Cliente/index.html"> Salir </a>
+        </li>
+    </ul>
+</header>
+
+    <section class="cotenido_admin">
+        <div class="titulo_admin">
+            <ul>
+                <li>Administracion de trabajadores</li>
+                    <li>
+                        <div class="col-4 d-flex justify-content-end" id="contenedor_direc">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="princpal_gerente.html">Inicio</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Trabajadores</li>
+                                </ol>
+                          </nav>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="lista_opciones">
+            <form class="row g-3">
+                <div class="col-6 mb-3">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Por antiguedad</option>
+                        <option value="1">Edad</option>
+                        <option value="2">Apellido</option>
+                      </select>
+                </div>
+                
+              </form>
+        </div>
+        <div class="cuerpo_admin">
+            <ul class="cuerpo_list">
+                <li>
+            <table class="table table-success table-striped">
+                <thead>
+                    <tr>
+                      <th scope="col">DNI</th>
+                      <th scope="col">Apellido</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Edad</th>
+                      <th scope="col">Antiguedad</th>
+                      <th scope="col">Cargo</th>
+                      <th scope="col">Salario</th>
+                      <th scope="col">Acciones</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                      <td>@mdo</td>
+                      <td>@mdo</td>
+                      <td>@mdo</td>
+                      <td>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                            Actualizar trabajador
+                          </button>
+                          
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Actualizar datos</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <!-- Cotenedor -->
+                                        <div class="modal-body">
+                                        <form id="content-form">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <label class="nombre_label">DNI:</label>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <input type="text" name="Dni" class="mb-2" value="DNI por defecto" class="entrada_dato" id="dni_ap" required>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <label class="nombre_label">Apellido:</label>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <input type="text" name="Apellido" class="mb-2" value="Apellido por defecto" class="entrada_dato" id="apellido_ap" required>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <label class="nombre_label">Nombre:</label>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <input type="text" name="Nombre" class="mb-2" value="Nombre por defecto" class="entrada_dato" id="nombre_ap" required>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <label class="nombre_label">Edad:</label>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <input type="text" name="Edad" class="mb-2" value="Edad por defecto" class="entrada_dato" id="edad_ap" required>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <label class="nombre_label">Antiguedad:</label>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <input type="text" name="Antiguedad" class="mb-2" value="Antiguedad por defecto" class="entrada_dato" id="antiguedad_ap" required>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <label class="nombre_label">Cargo:</label>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <input type="text" name="Cargo" class="mb-2" value="Cargo por defecto" class="entrada_dato" id="cargo_ap" required>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <label class="nombre_label">Salario:</label>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <input type="text" name="Salrio" class="mb-2" value="Salario por defecto" class="entrada_dato" id="salario_ap" required>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <label class="nombre_label">Codigo usuario:</label>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <input type="text" name="Codigo" class="mb-2" value="Codigo por defecto" class="entrada_dato" id="codigo_ap" required>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <label class="nombre_label">Contraseña:</label>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <input type="password" name="Contraseña" class="mb-2" value="Contraseña por defecto" class="entrada_dato" id="contraseña_ap" required>
+                                                      </div>
+                                                      <div class="col-12 d-flex justify-content-center">
+                                                        <div class="btt_enviar">
+                                                     
+                                                          <input type="submit" value="Actualizar" onclick="hizoClick()">
+                                                          
+                                                        </div>
+                                                      </div>
+                                                    
+                                                </div>
+                                            </div>
+                                          </form>
+                                        </div>
+                                    
+                                        <div class="modal-footer">
+                    
+                                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                         </td>
+                    </tr>
+                    
+             </tbody>
+            </table>
+        </li>
+
+        <li id="opciones_lista">
+            <!-- Button trigger modal -->   
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Nuevo trabajador
+            </button>
+  
+             <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Nuevo Trabajador</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="content-form">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="nombre_label">DNI:</label>
+                                  </div>
+                                  <div class="col-12">
+                                    <input type="text" name="Dni" class="mb-2" class="entrada_dato" id="ndni_ap" required>
+                                  </div>
+                                  <div class="col-12">
+                                    <label class="nombre_label">Apellido:</label>
+                                  </div>
+                                  <div class="col-12">
+                                    <input type="text" name="Apellido" class="mb-2"  class="entrada_dato" id="napellido_ap" required>
+                                  </div>
+                                  <div class="col-12">
+                                    <label class="nombre_label">Nombre:</label>
+                                  </div>
+                                  <div class="col-12">
+                                    <input type="text" name="Nombre" class="mb-2"  class="entrada_dato" id="nnombre_ap" required>
+                                  </div>
+                                  <div class="col-12">
+                                    <label class="nombre_label">Edad:</label>
+                                  </div>
+                                  <div class="col-12">
+                                    <input type="text" name="Edad" class="mb-2"  class="entrada_dato" id="nedad_ap" required>
+                                  </div>
+                                  <div class="col-12">
+                                    <label class="nombre_label">Cargo:</label>
+                                  </div>
+                                  <div class="col-12">
+                                    <input type="text" name="Cargo" class="mb-2"  class="entrada_dato" id="ncargo_ap" required>
+                                  </div>
+                                  <div class="col-12">
+                                    <label class="nombre_label">Salario:</label>
+                                  </div>
+                                  <div class="col-12">
+                                    <input type="text" name="Salario" class="mb-2"  class="entrada_dato" id="nsalario_ap" required>
+                                  </div>
+                                  <div class="col-12">
+                                    <label class="nombre_label">Codigo usuario:</label>
+                                  </div>
+                                  <div class="col-12">
+                                    <input type="text" name="Codigo" class="mb-2"  class="entrada_dato" id="ncodigo_ap" required>
+                                  </div>
+                                  <div class="col-12">
+                                    <label class="nombre_label">Contraseña:</label>
+                                  </div>
+                                  <div class="col-12">
+                                    <input type="password" name="Contraseña" class="mb-2"  class="entrada_dato" id="ncontraseña_ap" required>
+                                  </div>
+                                  <div class="col-12 d-flex justify-content-center">
+                                    <div class="btt_enviar">
+                                 
+                                      <input type="submit" value="Crear" onclick="hizoClick2()">
+                                      
+                                    </div>
+                                  </div>
+                                
+                            </div>
+                        </div>
+                      </form>
+                    </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+                </div>
+                
+                </div>
+                </div>
+                </div>
+
+        </li>
+
+        </ul>
+
+        </div>
+        <div id="paginacion_list">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Ant</a></li>
+                  <li class="page-item  active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Sig</a></li>
+                </ul>
+              </nav>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="../js/js_gerente/control_act.js"></script>
+    <script src="../js/js_gerente/control_nuevo.js"></script>
+</body>
+</html>

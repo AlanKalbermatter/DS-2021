@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../css/styles admin/style_adminprincipal.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles admin/style_listarclientes.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles admin/style_listartrans.css">
+
+
+    <title>Listado venta y alquiler SGI</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+<body>
+    <header class="cabecera_login">
+        <ul id="lista_cabecera">
+            <li id="boton_cabecera"> 
+                <a href="principal_comercializacion.html">SGI</a>
+            </li>
+            <li>
+                <a href="principal_comercializacion.html">Bienvenido, [Nombre Usuario]</a>
+            </li>
+            <li>
+                <a href="../Cliente/cli_principal.html">Ir al sitio</a>
+            </li>
+            <li>
+                <a href="principal_comercializacion.html"> Editar perfil </a>
+            </li>
+            <li>
+                <a href="../Cliente/index.html"> Salir </a>
+            </li>
+        </ul>
+    </header>
+
+    <section class="cotenido_admin">
+        <div class="titulo_admin">
+            <ul>
+                <li>Listado de Venta y alquiler</li>
+                    <li>
+                        <div class="col-4 d-flex justify-content-end" id="contenedor_direc">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="principal_comercializacion.html">Inicio</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Listar venta y alquiler</li>
+                                </ol>
+                          </nav>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="lista_opciones">
+            <ul>
+                <li>
+                    <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <p class="mensaje_reporte" id="mensaje_titulo_reporte">Complete los campos para obtener el reporte</p>
+                              </div>
+                         
+                          <div class="col-12 mb-1">
+                            <p class="mensaje_reporte">Indique el rango de tiempo:</p>
+                          </div>
+                          <div class="col-12 mb-3">
+                            <label for="start">Comezando por:</label>
+
+                            <input type="date" id="start" name="trip-start"
+                                   value="2015-01-01"
+                                   min="2015-01-01" max="2022-12-31">
+                          </div>
+                          <div class="col-12 mb-3">
+                            <label for="start">Terminando por:</label>
+
+                            <input type="date" id="end" name="trip-start"
+                                   value="2015-01-01"
+                                   min="2015-01-01" max="2022-12-31">
+
+                          </div>
+
+                          <div class="col-12 d-flex justify-content-center">
+                            <div class="btt_enviar">
+                         
+                              <input type="submit" value="Enviar" onclick="hizoClick()">
+                              
+                            </div>
+                          </div>
+                        
+                          </div>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </section>   
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="../js/js_comercializacion/control_ventalq.js" ></script>
+</body>
+</html>
+
+

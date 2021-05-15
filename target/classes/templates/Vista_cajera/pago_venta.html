@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" type="text/css" href="../css/styles admin/style_adminprincipal.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles admin/style_listarclientes.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles cajera/style_pagoalquiler.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago venta SGI</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+<body>
+    <body>
+        <header class="cabecera_login">
+            <ul id="lista_cabecera">
+                <li id="boton_cabecera"> 
+                    <a href="cajera_principal.html">SGI</a>
+                </li>
+                <li>
+                    <a href="cajera_principal.html">Bienvenido, [Nombre Usuario]</a>
+                </li>
+                <li>
+                    <a href="../Cliente/cli_principal.html">Ir al sitio</a>
+                </li>
+                <li>
+                    <a href="cajera_principal.html"> Editar perfil </a>
+                </li>
+                <li>
+                    <a href="../Cliente/index.html"> Salir </a>
+                </li>
+            </ul>
+        </header>
+        <section class="cotenido_admin">
+            <div class="titulo_admin">
+                <ul>
+                    <li>Pago Venta</li>
+                        <li>
+                            <div class="col-4 d-flex justify-content-end" id="contenedor_direc">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="cajera_principal.html">Inicio</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Pago venta</li>
+                                    </ol>
+                              </nav>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="lista_opciones">
+                <form class="row g-3">
+                    <div class="col-auto">
+                        <input class="form-control" type="text" placeholder="Ingrese codigo de propiedad" aria-label="default input example">
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" class="btn btn-primary mb-3">Ingresar</button>
+                    </div>
+                  </form>
+            </div>
+            <div class="cuerpo_admin">
+                <ul class="cuerpo_list">
+                    <li>
+                <table class="table table-success table-striped">
+                    <thead>
+                        <tr>
+                          <th scope="col">Codigo inmueble</th>
+                          <th scope="col">Nombre propietario</th>
+                          <th scope="col">Tipo</th>
+                          <th scope="col">Antigüedad</th>
+                          <th scope="col">Acciones</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                          <td>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                Realizar pago
+                              </button>
+                              
+                                    <!-- Modal -->
+                                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Realizar pago</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <!-- Cotenedor -->
+                                        <div class="modal-body">
+                                        <form id="content-form">
+                                        <section class="boleta_imprimir">
+                                            <div class="container">
+                                            <div class="row">
+
+                                                <div class="col-12">
+                                                    <h3>Transaccion de Venta</h3>
+                                                </div>
+                                                <div class="col-12">
+                                                    <p>Tipo venta: </p>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="col-12">
+                                                    
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio6" value="option1" checked>
+                                                            <label class="form-check-label" for="inlineRadio6">Financiada</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio6" value="option2">
+                                                            <label class="form-check-label" for="inlineRadio6">Total</label>
+                                                        </div>
+                                                
+                                                </div>
+                                                </div>
+                                                <div class="col-12">
+                                                <label class="nombre_label" class="mb-2">Porcentaje por comision:</label>
+                                                </div>
+                                                <div class="col-12">
+                                                <input type="text" name="comision" class="entrada_dato" id="porcentaje_com" class="Interes" required>
+                                                </div>
+        
+                                                <div class="col-12">
+                                                <label class="nombre_label">Pago:</label>
+                                                </div>
+                                                <div class="col-12">
+                                                <input type="text" name="pago" class="entrada_dato" id="pago_com" class="Monto" required>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label class="nombre_label">Moneda:</label>
+                                                </div>
+                                                <div class="col-12">
+                                                    
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio7" value="option3" checked>
+                                                            <label class="form-check-label" for="inlineRadio7">Peso</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio7" value="option4">
+                                                            <label class="form-check-label" for="inlineRadio7">Dolar</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio7" value="option5">
+                                                            <label class="form-check-label" for="inlineRadio7">Euro</label>
+                                                        </div>
+                                                
+                                                </div>
+                                                <div class="col-12">
+                                                    <label class="nombre_label">Forma de pago:</label>
+                                                </div>
+                                                <div class="col-12">
+                                                    
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions8" id="inlineRadio8" value="option6" checked>
+                                                            <label class="form-check-label" for="inlineRadio8">Efectivo</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions8" id="inlineRadio8" value="option7">
+                                                            <label class="form-check-label" for="inlineRadio8">Tarjeta</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions8" id="inlineRadio8" value="option8">
+                                                            <label class="form-check-label" for="inlineRadio8">Deposito</label>
+                                                        </div>
+                                                
+                                                </div>
+            
+                                                <div class="col-12">
+                                                    <p>Para verificar la validez de la factura escanea el codigo QR</p>
+                                                </div>
+                                                <div class="col-12 d-flex justify-content-center">
+                                                    <div id="qrcode">
+                                                        <img src="https://www.codigos-qr.com/qr/php/qr_img.php?d=Pueba de codigo QR&s=4&e=" alt="Generador de Códigos QR Codes"/>
+                                                        <br/>
+                                                        </div>                                                
+                                                </div>
+                                                </section>
+                                                <div class="col-12 d-flex justify-content-center">
+                                                <div class="btt_enviar">
+                                                
+                                                    <input type="submit" value="Pagar" onclick="hizoClick()">
+                                                    
+                                                </div>
+                                                </div>
+                                            </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a href="factura_venta.html" target="_blank" class="btn btn-secondary">Imprimir</a>
+                                                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+                                            
+                                            </div>
+                                            </div>  
+                                        
+                                        
+                                    </div>
+                                </div>
+                                </form>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1b">
+                                    Mas datos
+                                  </button>
+                                  
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="exampleModal1b" tabindex="-1" aria-labelledby="exampleModalLabel1b" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">Mas datos</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <!-- Cotenedor -->
+                                                <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-12 mb-3">
+                                                            Codigo inmueble : n
+                                                        </div>
+                                                        <div class="col-12 mb-3">
+                                                            Tipo : X
+                                                        </div>
+                                                        <div class="col-12 mb-3">
+                                                            <ul>
+                                                                <li class="col-12 mb-1">País: X</li>
+                                                                <li class="col-12 mb-1">Provincia: X</li>
+                                                                <li class="col-12 mb-1">Localidad: X</li>
+                                                                <li class="col-12 mb-1">Barrio: X</li>
+                                                                <li class="col-12 mb-1">Dirección: X</li>
+                                                                <li class="col-12 mb-1">Calle: X</li>
+                                                                <li class="col-12 mb-1">Piso: X</li>
+                                                                <li class="col-12 mb-1">Numero: X</li>
+                                                                <li class="col-12 mb-1">Codigo postal: X</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-12 mb-3">
+                                                            <ul>
+                                                                <li class="col-12 mb-1"> Cantidad baños: X </li>
+                                                                <li class="col-12 mb-1"> Domitorios: X </li>
+                                                                <li class="col-12 mb-1"> Suites:X </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <p class="col-12 mb-3">Antigüedad : X</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <p class="col-12 mb-3">Cuenta con espacios: X</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <p class="col-12">Cuenta con artefactos : X</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <p class="col-12 mb-3">Servicios adheridos : X</p>
+                                                        </div>
+                                                        <div class="col-12 mb-3">
+                                                            <ul>
+                                                                <li class="col-12 mb-1">Numero cliente: X</li>
+                                                                <li class="col-12 mb-1">Tipo de cliente: X</li>
+                                                                <li class="col-12 mb-1">Nombre y apeliido: X</li>
+                                                                <li class="col-12 mb-1">DNI : X</li>
+                                                                <li class="col-12 mb-1">Telefono : X</li>
+                                                                <li class="col-12 mb-1">Email: X</li>
+                                                                <li class="col-12 mb-1">Direccion : X</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <p class="col-12 mb-1">Precio total del inmueble : X</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                <a href="impresion_datos.html" class="btn btn-secondary" target="_blank">Imprimir Datos</a>
+                                                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                </td>
+                        </tr>
+                      </tbody>
+                </table>
+            </li>
+    
+            </ul>
+    
+            </div>
+            <div id="paginacion_list">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link" href="#">Ant</a></li>
+                      <li class="page-item  active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Sig</a></li>
+                    </ul>
+                  </nav>
+            </div>
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+        <script src="../js/js_cajero/cpago_venta.js"></script>
+    
+</body>
+</html>

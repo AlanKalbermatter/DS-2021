@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Factura SGI</title>
-
+    <link rel="shortcut icon" href="../img/real-estate.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <script src="../html2pdf.js-master/dist/html2pdf.bundle.min.js"></script>
@@ -14,66 +14,42 @@
 <body>
 
     <section id="boleta_imprimir">
-        <div class="container ">
-          <div class="row ">
-
-            <div class="col-12 d-flex justify-content-center ">
-                <h3>Transaccion de alquiler</h3>
-            </div>
-            <div class="col-12 d-flex justify-content-center">
-                <label for="start">Fecha de pago:</label>
-            </div>
-            <div class="col-12 d-flex justify-content-center mb-3">
-                <input type="date" class="start" name="trip-start"
-                    value="2021-05-19"
-                    min="2015-01-01" max="2022-12-31" required>
-              </div>
-            <div class="col-12 d-flex justify-content-center">
-              <label class="nombre_label" class="mb-2">Interes por mora:</label>
-            </div>
-            <div class="col-12 d-flex justify-content-center mb-3">
-              <input type="text" name="Interes" value="500" class="entrada_dato" class="Interes" required>
-            </div>
-
-            <div class="col-12 d-flex justify-content-center">
-              <label class="nombre_label">Total a pagar:</label>
-            </div>
-            <div class="col-12 d-flex justify-content-center mb-3">
-              <input type="text" name="Monto_final" value="$5000" class="entrada_dato" class="Monto" required>
-            </div>
-            <div class="col-12 d-flex justify-content-center">
-                <label class="nombre_label">Forma de pago:</label>
-              </div>
-            <div class="col-12 d-flex justify-content-center mb-3">
-                
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
-                        <label class="form-check-label" for="inlineRadio1">Efectivo</label>
+        <div class="container mt-5 border">
+            <div class="row">
+                <div class="col-6 border d-flex justify-content-center">
+                    <img src="../img/LogoMakr.png" width="250px" height="150px">
+                </div>
+                <div class="col-6 border d-flex justify-content-center"><h1>RECIBO <img src="../img/codigos_qr/qr_img_factura_alquiler.png"></h1></div>
+                <div class="col-6 d-flex justify-content-center"><h6>Resistencia |  Tel: 2216179914</h6></div>
+                <div class="col-6 d-flex justify-content-center"><h6>Resistencia | Chaco | 6:30 a 20hs | Lunes a Viernes</h6></div>
+                <div class="col-6 d-flex justify-content-center"><h6>C.U.I.T : 20-29485327-9 <p>Ing. Brutos : 20-29485327-9</p></h6></div>
+                <div class="col-12 border d-flex justify-content-center"><h6 class="fw-bold">COBRO POR CUENTA Y ORDEN DE TERCEROS, IMPORTE PARA SER ENTREGADO AL PROPIETARIO O A QUIEN CORRESPONDA</h6></div>
+                <div class="col-6 "><h6>Cliente <input value="Cliente"></input></h6></div>
+                <div class="col-6 "><h6>Localidad <input value="Localidad"></input></h6></div>
+                <div class="col-6 "><h6>Direccion <input value="Direccion"></input></h6></div>
+                <div class="col-12 border d-flex justify-content-center"><h6 class="fw-bold">Propietario y totales finales</h6></div>
+                <div class="col-6  d-flex justify-content-center"><h6>En concepto de: Alquiler</h6></div>
+                <div class="col-6  d-flex justify-content-center"><h6>Propietario: <input value="Propietario"></input></h6></div>
+                <div class="col-6  d-flex justify-content-center"><h6>Codigo de pago: <input value="Codigo de pago"></input></h6></div>
+                <div class="col-6  d-flex justify-content-center"><h6>Fecha pago: <input value="Fecha pago"></input></h6></div>
+                <div class="col-6  d-flex justify-content-center"><h6>Precio alquiler: <input value="Precio alquiler"></input></h6></div>
+                <div class="col-6  d-flex justify-content-center"><h6>Forma de pago: <input value="Forma de pago"></input></h6></div>
+                <div class="col-12 border d-flex justify-content-center mt-3"><h6>Otros conceptos:</input></h6></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12  d-flex justify-content-center"><input value="Concepto"></input><input value="Valor"></input></div>
+                        <div class="col-12  d-flex justify-content-center">...</div>
+                        <div class="col-12  d-flex justify-content-center"><input value="Concepto"></input><input value="Valor"></input></div>
                     </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Tarjeta</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Deposito</label>
-                    </div>
-               
+                </div>
+                <div class="col-12 border d-flex justify-content-center mt-1"><h6 class="fw-bold">Total final:<input value="Total final"></input></h6></div>
             </div>
-
-            <div class="col-12 d-flex justify-content-center">
-                <p>Para verificar la validez de la factura escanea el codigo QR</p>
-            </div>
-            <div class="col-12 d-flex justify-content-center">
-                <div id="qrcode">
-                    <img src="../img/codigos_qr/qr_img_factura_alquiler.png" alt="Generador de Códigos QR Codes"/>
-                    <br/>
-                    </div>                                                
-            </div>
-            </section>
-            <div class="col-12 d-flex justify-content-center">
+        </div>
+        
+    </section>
+        <div class="col-12 d-flex justify-content-center mt-1">
             <button type="button" class="btn btn-primary" id="btnCrearPdf">Imprimir</button>
-            </div>
+        </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>

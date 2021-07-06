@@ -5,6 +5,10 @@ body{
 
 }
 
+.cuerpo-secre{
+    margin-top: 7em;
+}
+
 .titulo_secre #contenedor_direc{
     position: sticky;
     margin-left: 80em;
@@ -24,7 +28,7 @@ body{
 .cuerpo_list li{
     display: inline-block;
     list-style: none;
-    width: 100%;
+    width: 90%;
     margin-left:6em;
 }
 
@@ -101,3 +105,17 @@ body{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
+
+#small-btn {
+    width: 50px;
+    height: 25px;
+}
+
+#menu-navegacion .botones_navecacion{
+    margin-top: 3em;
+}
+
+#content-form{
+    margin-left: 30em;
+}
+

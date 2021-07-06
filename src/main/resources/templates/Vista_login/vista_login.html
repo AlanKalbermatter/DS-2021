@@ -5,9 +5,9 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Inicio sesion en SIG </title>
+    <title> Inicio sesion en SGI </title>
     <link rel="stylesheet" type="text/css" href="../css/styles login/style_vlogin.css">
-
+    <link rel="shortcut icon" href="../img/real-estate.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
 
@@ -21,7 +21,7 @@
 <body>
     <header class="cabecera_login">
         <div id="boton_cabecera">
-            <a href="#">SIG</a>
+            <a href="../index.html">SGI</a>
         </div>
     </header>
     <section class="contenedor_login" >
@@ -31,27 +31,31 @@
    
         <form id="content-form">
                 <div class="prop_input" >
-                <label class="nombre_label">Codigo usuario:</label>
-                <input type="text" name="Codigo Usuario" class="entrada_dato" id="nombre_ap" required>
+                <label class="nombre_label" >Codigo usuario:</label>
+                <input type="text" name="Codigo Usuario" class="entrada_dato" id="codigo_usuario" required>
                 </div>
                
 
                 <div class="prop_input" >
-                <label class="nombre_label">Password:</label><br>
-                <input type="password" name="Contraseña" class="entrada_dato" id="depto" required>
+                <label class="nombre_label" >Contraseña:</label><br>
+                <input type="password" name="Contraseña" class="entrada_dato" id="contraseña" required>
                 </div>
 
-                <div class="btt_enviar">
-                    <input type="submit" value="Enviar">
-                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="btt_enviar">
+                 
+                      <input type="submit" value="Enviar" onclick="hizoClick()">
+                      
+                    </div>
+                  </div>
                 
         </form>
        
        
     </section>
     <footer class="pie_login">
-      <p>©Copyright SIG todos los derechos reservados.</p>
+      <p>©Copyright SGI todos los derechos reservados.</p>
     </footer>
-    
+    <script src="../js/js_login/control_login.js" ></script>
 </body>
 </html>

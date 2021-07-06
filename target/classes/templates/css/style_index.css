@@ -1,5 +1,5 @@
 body{
-	background:-webkit-gradient(linear, 60% 20%, 60% 71%, from(#C7C7C7), to(#5cabe0));
+	background:-webkit-gradient(linear, 60% 20%, 60% 71%, from(#bcf2fe), to(#5cabe0));
 	padding: 0;
 	margin: 0;
 	font-family: 'Rubik', sans-serif;
@@ -11,15 +11,15 @@ a{
 
 .lateral_izq img{
 	opacity: 0.4;
-	height: 100%;
+	height: 87%;
 	width: 100%;
 }
 
 .lateral_izq{
 	width: 450px;
-	height: 97.5%;
+	height: 100%;
 	/*background-color: rgba(126, 211, 234,0.6);*/
-	background-color: rgba(4, 133, 219, 0.7);
+	background-color: #bcf2fe;
 	position: absolute;
 
 }
@@ -37,7 +37,7 @@ a{
 }
 
 #boton_ingresar img{
-border:outset 4px #c7c7c7;
+border:outset 4px #5cabe0;
 -moz-border-radius-topleft: 0px;
 -moz-border-radius-topright:0px;
 -moz-border-radius-bottomleft:0px;

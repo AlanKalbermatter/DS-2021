@@ -4,7 +4,7 @@ function hizoClick(){
     var descripcion = document.getElementById("descrip").value;
 
     if (fecha == "" || monto == "" || descripcion == "") {
-            
+            event.preventDefault();
             alert("Debes completar los campos");
 
         }

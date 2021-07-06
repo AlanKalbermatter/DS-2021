@@ -5,105 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Factura SGI</title>
-
+    <link rel="shortcut icon" href="../img/real-estate.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <script src="../html2pdf.js-master/dist/html2pdf.bundle.min.js"></script>
-    <script src="../js/js_cajero/gen_venta.js"> </script>
+    <script src="../js/js_cajero/gen_alquiler.js"> </script>
 </head>
 <body>
 
     <section id="boleta_imprimir">
-        <section class="boleta_imprimir">
-            <div class="container">
+        <div class="container mt-5 border">
             <div class="row">
+                <div class="col-6 border d-flex justify-content-center">
+                    <img src="../img/LogoMakr.png" width="250px" height="150px">
+                </div>
+                <div class="col-6 border d-flex justify-content-center"><h1>RECIBO <img src="../img/codigos_qr/qr_img_factura_alquiler.png"></h1></div>
+                <div class="col-6 d-flex justify-content-center"><h6>Resistencia |  Tel: 2216179914</h6></div>
+                <div class="col-6 d-flex justify-content-center"><h6>Resistencia| Chaco | 6:30 a 20hs | Lunes a Viernes</h6></div>
+                <div class="col-6 d-flex justify-content-center"><h6>C.U.I.T : 20-29485327-9 <p>Ing. Brutos : 20-29485327-9</p></h6></div>
+                <div class="col-12 border d-flex justify-content-center"><h6 class="fw-bold">COBRO POR CUENTA Y ORDEN DE TERCEROS, IMPORTE PARA SER ENTREGADO AL PROPIETARIO O A QUIEN CORRESPONDA</h6></div>
+                <div class="col-6 "><h6>Cliente <input value="Cliente"></input></h6></div>
+                <div class="col-6 "><h6>Localidad <input value="Localidad"></input></h6></div>
+                <div class="col-6 "><h6>Direccion <input value="Direccion"></input></h6></div>
+                <div class="col-12 border d-flex justify-content-center"><h6 class="fw-bold">Propietario y totales finales</h6></div>
+                <div class="col-6  d-flex justify-content-center"><h6>En concepto de: Venta</h6></div>
+                <div class="col-6  d-flex justify-content-center"><h6>Propietario: <input value="Propietario"></input></h6></div>
+                <div class="col-6  d-flex justify-content-center"><h6>Codigo de pago: <input value="Codigo de pago"></input></h6></div>
+                <div class="col-6  d-flex justify-content-center"><h6>Fecha pago: <input value="Fecha pago"></input></h6></div>
+                <div class="col-6  d-flex justify-content-center"><h6>Precio Venta: <input value="Precio venta"></input></h6></div>
+                <div class="col-6  d-flex justify-content-center"><h6>Porcentaje por comision: <input value="Porcentaje"></input></h6></div>
+                <div class="col-6  d-flex justify-content-center"><h6>Tipo venta: <input value="Tipo"></input></h6></div>
+                <div class="col-6  d-flex justify-content-center"><h6>Moneda: <input value="Moneda"></input></h6></div>
+                <div class="col-6  d-flex justify-content-center"><h6>Forma de pago: <input value="Forma de pago"></input></h6></div>
+                <div class="col-12 border d-flex justify-content-center mt-3"><h6>Otros conceptos:</input></h6></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12  d-flex justify-content-center"><input value="Concepto"></input><input value="Valor"></input></div>
+                        <div class="col-12  d-flex justify-content-center">...</div>
+                        <div class="col-12  d-flex justify-content-center"><input value="Concepto"></input><input value="Valor"></input></div>
+                    </div>
+                </div>
+                <div class="col-12 border d-flex justify-content-center mt-1"><h6 class="fw-bold">Total final:<input value="Total final"></input></h6></div>
+            </div>
+        </div>
+        
+    </section>
+        <div class="col-12 d-flex justify-content-center mt-1">
+            <button type="button" class="btn btn-primary" id="btnCrearPdf">Imprimir</button>
+        </div>
 
-                <div class="col-12 d-flex justify-content-center">
-                    <h3>Transaccion de Venta</h3>
-                </div>
-                <div class="col-12 d-flex justify-content-center">
-                    <p>Tipo venta: </p>
-                </div>
-                <div class="col-12 d-flex justify-content-center">
-                    <div class="col-12 d-flex justify-content-center">
-                    
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio6" value="option1" checked>
-                            <label class="form-check-label" for="inlineRadio6">Financiada</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio6" value="option2">
-                            <label class="form-check-label" for="inlineRadio6">Total</label>
-                        </div>
-                
-                </div>
-                </div>
-                <div class="col-12 d-flex justify-content-center">
-                <label class="nombre_label" class="mb-2">Porcentaje por comision:</label>
-                </div>
-                <div class="col-12 d-flex justify-content-center">
-                <input type="text" name="comision" class="entrada_dato" value="3.5" id="porcentaje_com" class="Interes" required>
-                </div>
-
-                <div class="col-12 d-flex justify-content-center">
-                <label class="nombre_label">Pago:</label>
-                </div>
-                <div class="col-12 d-flex justify-content-center">
-                <input type="text" name="pago" class="entrada_dato" value="1500" id="pago_com" class="Monto" required>
-                </div>
-                <div class="col-12 d-flex justify-content-center">
-                    <label class="nombre_label">Moneda:</label>
-                </div>
-                <div class="col-12 d-flex justify-content-center">
-                    
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio7" value="option3" >
-                            <label class="form-check-label" for="inlineRadio7">Peso</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio7" value="option4" checked>
-                            <label class="form-check-label" for="inlineRadio7">Dolar</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio7" value="option5">
-                            <label class="form-check-label" for="inlineRadio7">Euro</label>
-                        </div>
-                
-                </div>
-                <div class="col-12 d-flex justify-content-center">
-                    <label class="nombre_label">Forma de pago:</label>
-                </div>
-                <div class="col-12 d-flex justify-content-center">
-                    
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions8" id="inlineRadio8" value="option6" checked>
-                            <label class="form-check-label" for="inlineRadio8">Efectivo</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions8" id="inlineRadio8" value="option7">
-                            <label class="form-check-label" for="inlineRadio8">Tarjeta</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions8" id="inlineRadio8" value="option8">
-                            <label class="form-check-label" for="inlineRadio8">Deposito</label>
-                        </div>
-                
-                </div>
-
-                <div class="col-12 d-flex justify-content-center">
-                    <p>Para verificar la validez de la factura escanea el codigo QR</p>
-                </div>
-                <div class="col-12 d-flex justify-content-center">
-                    <div id="qrcode">
-                        <img src="../img/codigos_qr/qr_img_factura_alquiler.png" alt="Generador de Códigos QR Codes"/>
-                        <br/>
-                        </div>                                                
-                </div>
-                </section>
-                <div class="col-12 d-flex justify-content-center">
-                    <button type="button" class="btn btn-primary" id="btnCrearPdf">Imprimir</button>
-                </div>
-            </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
 </html>

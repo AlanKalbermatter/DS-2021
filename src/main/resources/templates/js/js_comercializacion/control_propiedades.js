@@ -5,7 +5,7 @@ function hizoClick(){
     
     if ((campo1!='') && (campo2!='')){
         if(Date.parse(campo1)<= Date.parse(campo2)){
-            window.location.href = "reporte_cliente.html";
+            window.location.href = "reporte_propiedades.html";
             alert("Reporte generado satisfactoriamente");
         }else{
             event.preventDefault();

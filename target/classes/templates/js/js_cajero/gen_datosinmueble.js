@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 },
                 jsPDF: {
                     unit: "in",
-                    format: "a4",
+                    format: "office",
                     orientation: 'portrait' // landscape o portrait
                 }
             })

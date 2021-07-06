@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactanos SIG</title>
-
+    <title>Contactanos DOMUS</title>
+    <link rel="shortcut icon" href="../img/real-estate.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/styles cliente/style_principal.css" >
     <link rel="stylesheet" type="text/css" href="../css/styles cliente/style_nosotros.css">
@@ -34,7 +34,7 @@
         <div id="opc_cabecera">
             <ul id="lista_cabecera">
                 <li class="rounded" id="boton_logo">
-                  <a href="index.html"><i class="fa fa-home fa-3x" aria-hidden="true"></i>SIG</a></li>
+                  <a href="../index.html"><i class="fa fa-home fa-3x" aria-hidden="true"></i>DOMUS</a></li>
                 <li class="rounded"><a href="cli_principal.html">Inicio</a></li>
                 <li class="rounded"><a href="nosotros_principal.html">Nosotros</a></li>
                 <li class="rounded"><a href="propiedades_principal.html">Propiedades</a></li>
@@ -71,9 +71,9 @@
                     <p>Ciudad</p>
                     <select class="form-select" aria-label="Default select example">
                       <option selected>Cualquiera</option>
-                      <option value="1">Florida</option>
-                      <option value="2">New York</option>
-                      <option value="3">Colorado</option>
+                      <option value="1">Resistencia</option>
+                      <option value="2">Charata</option>
+                      <option value="3">Saénz Peña</option>
                     </select>
                   </div>
                   <div class="col-6 mb-3">
@@ -233,8 +233,12 @@
                                             value="2015-01-01"
                                             min="2015-01-01" max="2022-12-31" required>
                                       </div>
+                                      <div class="col-12">
+                                        <label for="start">Descripcion (opcional):</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                      </div>
 
-                                      <div class="col-12 d-flex justify-content-center">
+                                      <div class="col-12 d-flex justify-content-center mt-2">
                                         <div class="btt_enviar">
                                      
                                           <input type="submit" value="Enviar" onclick="hizoClick()">

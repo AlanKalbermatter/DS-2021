@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/styles admin/style_adminprincipal.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles admin/style_listarclientes.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles admin/style_listartrans.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte cita</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="../img/real-estate.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../html2pdf.js-master/dist/html2pdf.bundle.min.js"></script>
+
+    <script src="../js/js_comercializacion/gen_reporte_clientes.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+<body>
+  <section id="reporte_cliente">
+    <div class="container d-flex justify-content-center border mb-3">
+      <div class="row ">
+        <div class="col-12 fs-3 fw-bold ">Reporte cita</div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4 fs-5 border">Fecha impresion</div>
+        <div class="col-4 fs-5 border">Hora impresion</div>
+      </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Codigo cita</th>
+                <th scope="col">Fecha cita</th>
+                <th scope="col">Horario cita</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Email</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Asignacion</th>
+              </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>03/03/2021</td>
+                <td>15:20</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>asd@asd.com</td>
+                <td>111444777</td>
+                <td>Ninguna</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>03/03/2021</td>
+                <td>20:30</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>asd@asd.com</td>
+                <td>111222333</td>
+                <td>Agente 1</td>
+              </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!--Seccion para titulo-->
+                <th></th>
+                <td></td>
+                <th colspan="6">Totales finales</th>
+                
+              </tr>
+              <tr>
+                
+                <th colspan="6"> </th>
+                
+              </tr>
+              <tr>
+                <th>Total Citas</th>
+ 
+              </tr>
+              <tr>
+                  <td>000</td>
+
+              </tr>
+            
+        </tfoot>
+      </table>
+    </section>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Abrir opciones de listado
+    </button>
+    
+
+     <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Opciones de listado</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+            <button type="button" class="btn btn-primary" id="btnCrearPdf">Imprimir</button>
+        </div>
+        <div class="modal-footer">
+
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../img/real-estate.png">
+    <link rel="stylesheet" type="text/css" href="../css/styles admin/style_adminprincipal.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles admin/style_listarclientes.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles admin/style_listaractividades.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir inmueble SGI</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <!--Libreria de iconos-->
+    <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.8.1/css/all.css” integrity=“sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0Ml5d60M1M7uH2+nqUivzIebhndOJK28anvf” crossorigin= “anonymous”>
+    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.css">
+
+    <!--Css para las propiedades-->
+    <link rel="stylesheet" type="text/css" href="../css/styles agente/propiedades_agente.css" >
+
+</head>
+<body>
+    <header class="cabecera_login">
+        <ul id="lista_cabecera">
+            <li id="boton_cabecera"> 
+                <a href="principal_agente.html">SGI</a>
+            </li>
+            <li>
+                <a href="principal_agente.html">Bienvenido, [Nombre Usuario]</a>
+            </li>
+            <li>
+                <a href="../Cliente/cli_principal.html">Ir al sitio</a>
+            </li>
+            <li>
+                <a href="principal_agente.html"> Editar perfil </a>
+            </li>
+            <li>
+                <a href="../index.html"> Salir </a>
+            </li>
+        </ul>
+    </header>
+    
+    <section class="cotenido_admin">
+        <div class="titulo_admin">
+            <ul>
+                <li>Subir Propiedad</li>
+                    <li>
+                        <div class="col-4 d-flex justify-content-end" id="contenedor_direc">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="principal_agente.html">Inicio</a></li>
+                                <li class="breadcrumb-item"><a href="propiedades.html">Propiedades</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Subir propiedad</li>
+                                </ol>
+                          </nav>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <form>
+        <div class="container mt-5 d-flex ">
+            <div class="row">
+
+              <div class="col-12">
+                <label class="nombre_label">Localizacion:</label>
+              </div>
+              <div class="col-12">
+                <input type="text" name="Loc" class="mb-2" class="entrada_dato" id="loc-ap" required>
+              </div>
+              <div class="col-12">
+                <label class="nombre_label" class="mb-2">Tipo propiedad:</label>
+              </div>
+              <div class="col-12">
+                <select class="form-select" aria-label="Default select example" id="tipo_prop" required>
+                    <option selected>Selecciona un tipo</option>
+                    <option value="1">Casa</option>
+                    <option value="2">Departamento</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="nombre_label" class="mb-2">Ciudad:</label>
+              </div>
+              <div class="col-12">
+                <select class="form-select" aria-label="Default select example" id="ciudad" required>
+                  <option selected>Elegir ciudad</option>
+                  <option value="1">Resistencia</option>
+                  <option value="2">Charatas</option>
+                  <option value="3">Saénz Peña</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <label class="nombre_label">Estado:</label>
+              </div>
+              <div class="col-12">
+                <input type="text" name="Estado" class="entrada_dato" id="estado-ap" required>
+              </div>
+
+              <div class="col-12">
+                <label class="nombre_label">Area:</label>
+              </div>
+              <div class="col-12">
+                <input type="text" name="Area" class="entrada_dato" id="area-ap">
+              </div>
+
+              <div class="col-12">
+                <label for="start">Camas:</label>
+              </div>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Cantidad de camas</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <div class="col-12">
+                <label for="start">Baños:</label>
+              </div>
+              <div class="col-12">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Cantidad de baños</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="start">Garage:</label>
+              </div>
+              <div class="col-12">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Garage</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+              </div>
+              
+                <div class="col-12">
+                <label for="exampleDataList" class="form-label">Comodidades</label>
+                </div>
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Balcon
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheck2" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Cocina al aire libre
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheck3" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Cable Tv
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-4">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheck4" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Cubierta
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheck5" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Canchas de tenis
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheck6" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Internet
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-4">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheck7" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Parquisado
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheck8" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Sun Room
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheck9" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                       Pisos de concreto
+                                    </label>
+                                  </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-12">
+                  <label class="nombre_label">Enlace de ubicacion:</label>
+                </div>
+                <div class="col-12">
+                  <input type="url" name="ubicacion" class="mb-2" class="entrada_dato" id="ubicacion-ap">
+                </div>
+                <div class="col-12">
+                    <label class="nombre_label">Precio:</label>
+                  </div>
+                  <div class="col-12">
+                    <input type="text" name="precio" class="mb-2" class="entrada_dato" id="precio-ap" required>
+                </div>
+                <div class="mb-3">
+                    <div class="col-12">
+                        <label for="exampleFormControlTextarea1" class="form-label">Descripcion de inmueble</label>
+                    </div>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                
+                <div class="mb-3">
+                    <div class="col-12">
+                    <label for="formFileMultiple" class="form-label">Subir imagenes de inmueble</label>
+                    </div>
+                    <input class="form-control" type="file" id="formFileMultiple" multiple>
+                </div>
+
+                
+                <div class="col-12 d-flex justify-content-center mb-4">
+                    <div class="btt_enviar">
+                   <input type="submit" value="Subir" onclick="hizoClick()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+             
+ </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+    <script src="../js/js_agente/control_prop.js"></script>
+</body>
+</html>

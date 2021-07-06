@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de gestion de inmuebles</title>
+    <title>DOMUS Inmobiliaria</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/styles cliente/style_principal.css" >
     <link rel="preconnect" href="https://fonts.gstatic.com">    
@@ -22,53 +22,103 @@
     <!--Libreria de iconos-->
     <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.8.1/css/all.css” integrity=“sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0Ml5d60M1M7uH2+nqUivzIebhndOJK28anvf” crossorigin= “anonymous”>
     <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.css">
-
+    <link rel="shortcut icon" href="../img/real-estate.png">
 </head>
 <body>  
     <header id="cabecera">
         <div id="opc_cabecera">
             <ul id="lista_cabecera">
                 <li class="rounded" id="boton_logo">
-                  <a href="index.html" target="_blank"><i class="fa fa-home fa-3x" aria-hidden="true"></i>SIG</a></li>
-                <li class="rounded"><a href="cli_principal.html" target="_blank">Inicio</a></li>
-                <li class="rounded"><a href="nosotros_principal.html" target="_blank">Nosotros</a></li>
-                <li class="rounded"><a href="propiedades_principal.html" target="_blank">Propiedades</a></li>
-                <li class="rounded"><a href="#">Contacto</a></li>
-                <li class="rounded"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Buscar</button></li>
+                  <a href="../index.html" target="_blank"><i class="fa fa-home fa-3x" aria-hidden="true"></i>DOMUS</a></li>
+                <li class="rounded"><a href="cli_principal.html">Inicio</a></li>
+                <li class="rounded"><a href="nosotros_principal.html">Nosotros</a></li>
+                <li class="rounded"><a href="propiedades_principal.html">Propiedades</a></li>
+                <li class="rounded"><a href="contactanos.html">Contacto</a></li>
+                <li class="rounded"><button class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Buscar</button></li>
             </ul>
         </div>
     </header>
+  
     
-    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-        <div class="offcanvas-header">
-        <h5 id="offcanvasTopLabel">Busca el inmueble de tus sueños</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-        <div class="offcanvas-body">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col6">Busqueda por palabra clave</div>
-              <div class="col6"><input class="form-control " type="text" placeholder="Palabra clave" aria-label="default input example"></div>
-            </div>
-          </div>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col6">
-                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                  <option selected>Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Buscar el hogar de tus sueños</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">Ingreso por palabra clave</div>
+            <div class="col-12 mb-3"><input class="form-control" type="text" placeholder="Ingreso por palabra clave" aria-label="default input example"></div>
+            <div class="col-12">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-6 mb-3">
+                    <p>Tipo</p>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Cualquiera</option>
+                      <option value="1">A la venta</option>
+                      <option value="2">Alquiler</option>
+                      <option value="3">Deshabitadas</option>
+                    </select>
+                  </div>
+
+                  <div class="col-6 mb-3">
+                    <p>Ciudad</p>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Cualquiera</option>
+                      <option value="1">Resistencia</option>
+                      <option value="2">Charata</option>
+                      <option value="3">Saénz Peña</option>
+                    </select>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <p>Dormitorios</p>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Cualquiera</option>
+                      <option value="1">01</option>
+                      <option value="2">02</option>
+                      <option value="3">03</option>
+                    </select>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <p>Garage</p>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Cualquiera</option>
+                      <option value="1">01</option>
+                      <option value="2">02</option>
+                      <option value="3">03</option>
+                      <option value="4">04</option>
+                    </select>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <p>Baños</p>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Cualquiera</option>
+                      <option value="1">01</option>
+                      <option value="2">02</option>
+                      <option value="3">03</option>
+                    </select>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <p>Dormitorios</p>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Cualquiera</option>
+                      <option value="1">01</option>
+                      <option value="2">02</option>
+                      <option value="3">03</option>
+                    </select>
+                  </div>
+                </div>
               </div>
-
             </div>
-
-
+            <div class="col-12 d-flex justify-content-center">
+              <a href="#" class="btn btn-outline-primary"> Buscar </a>
+            </div>
+            
           </div>
-          
-          
         </div>
+      </div>
     </div>
 
     <section class="contenedor_carrousel">
@@ -89,7 +139,7 @@
                     <p class="direc_in" >Direccion de inmueble.</p>
                     <p class="descrip_in">Pequeña descripcion.</p>
                     <div id="boton_compra" class="rounded-pill  border-success">    
-                        <a href="#">CONSIGUELO | $$$</a>
+                        <a href="propiedad_solo.html">CONSIGUELO | $$$</a>
                     </div>
                     
                   </div>
@@ -105,7 +155,7 @@
                     <p class="direc_in" >Direccion de inmueble.</p>
                     <p class="descrip_in">Pequeña descripcion.</p>
                     <div id="boton_compra" class="rounded-pill  border-success">    
-                        <a href="#">CONSIGUELO | $$$</a>
+                        <a href="propiedad_solo.html">CONSIGUELO | $$$</a>
                     </div>
                     
                   </div>
@@ -120,7 +170,7 @@
                     <p class="direc_in" >Direccion de inmueble.</p>
                     <p class="descrip_in">Pequeña descripcion.</p>
                     <div id="boton_compra" class="rounded-pill  border-success">    
-                        <a href="#">CONSIGUELO | $$$</a>
+                        <a href="propiedad_solo.html">CONSIGUELO | $$$</a>
                     </div>
                     
                   </div>
@@ -156,9 +206,9 @@
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
                       <h5 class="card-title fw-bolder fs-3" id="titlec_1">Compra</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link fs-5">Conocer mas</a>
+                      <h6 class="card-subtitle mb-2 text-muted"></h6>
+                      <p class="card-text">Acorda con nosotros las mas comodas formas de pago para tener el hogar que se adapte a vos.</p>
+                      <a href="nosotros_principal.html" class="card-link fs-5">Conocer mas</a>
                       
                     </div>
                   </div>
@@ -167,9 +217,9 @@
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
                       <h5 class="card-title fw-bolder fs-3" id="titlec_2">Contactanos</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link fs-5">Conocer mas </a>
+                      <h6 class="card-subtitle mb-2 text-muted"></h6>
+                      <p class="card-text">Te explicamos la forma de contactarte con nosotros, estamos a tu disposicion.</p>
+                      <a href="nosotros_principal.html" class="card-link fs-5">Conocer mas </a>
                       
                     </div>
                   </div>
@@ -178,9 +228,9 @@
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
                       <h5 class="card-title fw-bolder fs-3" id="titlec_3">Eficientes</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link fs-5">Conocer mas</a>
+                      <h6 class="card-subtitle mb-2 text-muted"></h6>
+                      <p class="card-text">Conocé nuestra historia y la estadisticas que nos convierte en la Inmobiliaria numero uno de la provincia.</p>
+                      <a href="nosotros_principal.html" class="card-link fs-5">Conocer mas</a>
                       
                     </div>
                   </div>
@@ -202,11 +252,11 @@
                         <div class="contenedor_tarjeta">
                             <div class="card" style="width: 18rem;">
                                 <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="card-link">Card link</a>
-                                  <a href="#" class="card-link">Another link</a>
+                                  <h5 class="card-title">Titulo de inmueble #1</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">Direccion de inmueble #1</h6>
+                                  <p class="card-text">Descripcion de inmueble.</p>
+                                  <a href="propiedad_solo.html" class="card-link">Ver propiedad</a>
+                                  
                                 </div>
                               </div>
 
@@ -218,11 +268,11 @@
                 <div class="contenedor_tarjeta">
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
+                          <h5 class="card-title">Titulo de inmueble #2</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Direccion de inmueble #2</h6>
+                          <p class="card-text">Descripcion de inmueble.</p>
+                          <a href="propiedad_solo.html" class="card-link">Ver propiedad</a>
+    
                         </div>
                       </div>
 
@@ -233,11 +283,11 @@
                 <div class="contenedor_tarjeta">
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
+                          <h5 class="card-title">Titulo de inmueble #3</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Direccion de inmueble #3</h6>
+                          <p class="card-text">Descripcion de inmueble.</p>
+                          <a href="propiedad_solo.html" class="card-link">Ver propiedad</a>
+                 
                         </div>
                       </div>
 
@@ -431,10 +481,10 @@
 
               <div class="enlaces-container d-flex justify-content-center ">
                 <ul>
-                  <li><a href="#" >Inicio</a></li>
-                  <li><a href="#" >Nosotos</a></li>
-                  <li><a href="#" >Propiedades</a></li>
-                  <li><a href="#" >Contacto</a></li>
+                  <li><a href="cli_principal.html" >Inicio</a></li>
+                  <li><a href="nosotros_principal.html" >Nosotros</a></li>
+                  <li><a href="propiedades_principal.html" >Propiedades</a></li>
+                  <li><a href="contactanos.html" >Contacto</a></li>
                 </ul>
               </div>
              
